@@ -1,4 +1,3 @@
-import React from "react";
 import moment from "moment";
 import Link from "next/link";
 
@@ -17,10 +16,10 @@ const FeaturedPostCard = ({ post }) => (
         {post.title}
       </p>
       <div className="flex items-center absolute bottom-5 w-full justify-center">
-        <img width={25} src={post.author.photo.url} alt={post.author.name} />
-        <p className="inline align-middle text-white text-shadow ml-2 font-medium">
-          {post.author.name}
-        </p>
+        <div className="inline text-center align-middle text-white text-shadow ml-2 font-medium">
+          <p>Author</p>
+          <p className="font-semibold">{post.author.name}</p>
+        </div>
       </div>
     </div>
     <Link href={`/post/${post.slug}`}>

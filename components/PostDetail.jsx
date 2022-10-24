@@ -62,7 +62,7 @@ const PostDetail = ({ post }) => {
 
   return (
     <>
-      <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
+      <div className="bg-dark text-white shadow-2xl rounded-lg lg:p-8 pb-12 mb-8">
         <div className="relative overflow-hidden shadow-md mb-6">
           <img
             src={post.featuredImage.url}
@@ -80,14 +80,14 @@ const PostDetail = ({ post }) => {
                 className="align-middle"
                 src={post.author.photo.url}
               />
-              <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">
+              <p className="inline align-middle text-gray-400 ml-2 font-medium text-lg">
                 {post.author.name}
               </p>
             </div>
-            <div className="font-medium text-gray-700">
+            <div className="font-medium text-gray-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 inline mr-2 text-pink-500"
+                className="h-6 w-6 inline mr-2 text-secondary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
